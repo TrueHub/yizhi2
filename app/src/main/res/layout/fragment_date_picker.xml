@@ -1,0 +1,46 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vone.meihuayishu.com.UI.Frg.TimeChooseFragment">
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:calendarTextColor="@color/colorWhite"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/time_picker"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/date_picker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker"
+        android:text="取卦原理：\n         1、（年支数+月数+日数）÷8，得余数，按先天八卦数取为上卦；\n
+　　2、（年支数+月数+日数+时支数）÷8，得余数，按先天八卦数取为下卦；\n
+　　3、（年支数+月数+日数+时支数）÷6，得余数，按初爻至上爻顺序取为动爻。"
+        />
+</android.support.constraint.ConstraintLayout>

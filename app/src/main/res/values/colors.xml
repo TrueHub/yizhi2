@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorRed">#f5675d</color>
+    <color name="colorYellow">#eddc49</color>
+    <color name="colorBlue">#6984e3</color>
+    <color name="colorGreen">#72cb6f</color>
+    <color name="colorIndigo">#5fbdb7</color>
+    <color name="colorWhite">#dddddd</color>
+
+    <color name="alp_colorRed">#9bf5675d</color>
+    <color name="alp_colorYellow">#9beddc49</color>
+    <color name="alp_colorBlue">#9b6984e3</color>
+    <color name="alp_colorGreen">#9b72cb6f</color>
+    <color name="alp_colorIndigo">#9b5fbdb7</color>
+    <color name="alp_colorWhite">#9bdddddd</color>
+
+</resources>

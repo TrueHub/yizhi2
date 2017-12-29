@@ -1,0 +1,70 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="vone.meihuayishu.com.UI.Frg.BaziChooseFragment">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别    "
+        android:textOn="女"
+        android:textOff="男"
+        android:showText="true"
+        android:switchMinWidth="50dp"
+        android:track="@drawable/track"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_date_lunar"
+        app:layout_constraintBottom_toTopOf="@+id/date_picker"
+        app:layout_constraintEnd_toStartOf="@+id/tv_date_lunar"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_date_lunar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_date_lunar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="丁酉年四月廿三卯时"
+        app:layout_constraintBottom_toTopOf="@+id/date_picker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:calendarTextColor="@color/colorWhite"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/time_picker"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toEndOf="@+id/date_picker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+</android.support.constraint.ConstraintLayout>

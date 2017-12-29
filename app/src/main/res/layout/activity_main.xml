@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
+    android:background="@color/colorWhite"
+    android:padding="20dp"
+    tools:context="vone.meihuayishu.com.UI.Activity.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_time"
+        style="@style/tv_style_normal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorIndigo"
+        android:transitionName="@string/shareElement_frg"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_yao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/btn_yao"
+        style="@style/tv_style_normal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorBlue"
+        app:layout_constraintBottom_toTopOf="@+id/btn_num"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bazi"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_time"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/btn_num"
+        style="@style/tv_style_normal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGreen"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/float_note"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toRightOf="@+id/btn_yao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yao"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/btn_bazi"
+        style="@style/tv_style_normal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/btn_yao"
+        app:layout_constraintTop_toTopOf="@+id/btn_yao"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/frame_note"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_num"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="0.6" />
+
+<!--    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/iv_gua_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:backgroundTint="@color/colorGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_num" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/iv_bazi_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:backgroundTint="@color/colorRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_num" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_note"
+        app:backgroundTint="@color/colorBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_num"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="0.6" />
+
+</android.support.constraint.ConstraintLayout>
