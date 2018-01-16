@@ -10,11 +10,14 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import vone.meihuayishu.com.BaseActivity;
 import vone.meihuayishu.com.R;
 import vone.meihuayishu.com.UI.Frg.BaziChooseFragment;
+import vone.meihuayishu.com.UI.Frg.NumChooseFragment;
 import vone.meihuayishu.com.UI.Frg.TimeChooseFragment;
+import vone.meihuayishu.com.UI.Frg.YaoChooseFragment;
 
 import static vone.meihuayishu.com.UI.Activity.MainActivity.CHOOSE_BTN_COLOR;
 import static vone.meihuayishu.com.UI.Activity.MainActivity.CHOOSE_COLOR;
@@ -31,6 +34,7 @@ public class ChooseActivity extends BaseActivity implements View.OnClickListener
     private LinearLayout ll;
     private Button btn_calculate;
     private ImageView iv_back;
+    private TextView tv_title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +46,6 @@ public class ChooseActivity extends BaseActivity implements View.OnClickListener
         getWindow().setExitTransition(new Explode().setDuration(500));
         Intent intent = getIntent();
         initView(intent);
-
     }
 
     private void initView(Intent intent) {
@@ -51,6 +54,9 @@ public class ChooseActivity extends BaseActivity implements View.OnClickListener
         root_view.setOnClickListener(this);
         btn_calculate = (Button) findViewById(R.id.btn_calculate);
         btn_calculate.setOnClickListener(this);
+        iv_back = (ImageView) findViewById(R.id.iv_back);
+        iv_back.setOnClickListener(this);
+        tv_title = (TextView) findViewById(R.id.tv_title);
 
         int activityFlag = getIntent().getIntExtra(CHOOSE_FLAG, -1);
         int shareEleColor = getIntent().getIntExtra(CHOOSE_COLOR, Color.TRANSPARENT);
@@ -64,22 +70,26 @@ public class ChooseActivity extends BaseActivity implements View.OnClickListener
 //        btn_calculate.setHeight((int) h);
         switch (activityFlag) {
             case FLAG_TIME:
+                tv_title.setText("以时间起卦");
                 getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new TimeChooseFragment()).commit();
                 btn_calculate.setText("开始排卦");
                 break;
             case FLAG_YAO:
+                tv_title.setText("成卦排盘");
                 btn_calculate.setText("开始排卦");
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new YaoChooseFragment()).commit();
                 break;
             case FLAG_NUM:
+                tv_title.setText("以数字起卦");
                 btn_calculate.setText("开始排卦");
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new NumChooseFragment()).commit();
                 break;
             case FLAG_BAZI:
+                tv_title.setText("先天八字排盘");
                 btn_calculate.setText("八字排盘");
                 getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new BaziChooseFragment()).commit();
                 break;
         }
-        iv_back = (ImageView) findViewById(R.id.iv_back);
-        iv_back.setOnClickListener(this);
     }
 
     @Override
@@ -89,7 +99,7 @@ public class ChooseActivity extends BaseActivity implements View.OnClickListener
 
                 break;
             case R.id.iv_back:
-                finish();
+                super.onBackPressed();
                 break;
         }
     }

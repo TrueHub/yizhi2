@@ -67,4 +67,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker"
+        android:text="选择您的阳历生日，精确到半小时"
+        />
+
 </android.support.constraint.ConstraintLayout>

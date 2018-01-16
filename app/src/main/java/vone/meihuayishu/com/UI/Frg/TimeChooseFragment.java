@@ -1,17 +1,17 @@
 package vone.meihuayishu.com.UI.Frg;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 
+import vone.meihuayishu.com.BaseFragment;
 import vone.meihuayishu.com.R;
 import vone.meihuayishu.com.UTILS.NumPickerUtil;
 
-public class TimeChooseFragment extends Fragment {
+public class TimeChooseFragment extends BaseFragment {
 
     private DatePicker date_picker;
     private TimePicker time_picker;

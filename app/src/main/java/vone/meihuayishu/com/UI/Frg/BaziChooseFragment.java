@@ -1,7 +1,6 @@
 package vone.meihuayishu.com.UI.Frg;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +8,11 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import vone.meihuayishu.com.BaseFragment;
 import vone.meihuayishu.com.R;
 import vone.meihuayishu.com.UTILS.NumPickerUtil;
 
-public class BaziChooseFragment extends Fragment {
+public class BaziChooseFragment extends BaseFragment {
 
 
     private DatePicker date_picker;

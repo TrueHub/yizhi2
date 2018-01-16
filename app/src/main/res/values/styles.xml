@@ -20,4 +20,16 @@
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:gravity">center</item>
     </style>
+
+    <style name="MyLooperStyle">
+        <item name="awv_centerTextColor">@color/colorWhite</item>
+        <item name="awv_dividerTextColor">@color/alp_colorWhite</item>
+        <item name="awv_initialPosition">0</item>
+        <item name="awv_isLoop">true</item>
+        <item name="awv_itemsVisibleCount">7</item>
+        <item name="awv_lineSpace">2</item>
+        <item name="awv_outerTextColor">@color/alp_colorWhite</item>
+        <item name="awv_scaleX">1.2</item>
+        <item name="awv_textsize">15sp</item>
+    </style>
 </resources>

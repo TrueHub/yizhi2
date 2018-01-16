@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.Activity.MainActivity"
-            android:theme="@style/SplashTheme"
-            >
+        <activity
+            android:name=".UI.Activity.MainActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +24,8 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".UI.Activity.ChooseActivity"
-            android:label="@string/title_activity_time"/>
+            android:label="@string/title_activity_time" />
+        <activity android:name=".UI.Activity.GuaActivity"></activity>
     </application>
 
 </manifest>
