@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:transitionName="@string/shareElement_frg"
-    tools:context="vone.meihuayishu.com.UI.Activity.ChooseActivity">
+    tools:context="com.meihuayishu.vone.UI.Activity.ChooseActivity">
 
     <TextView
         android:id="@+id/tv_title"
@@ -46,6 +46,7 @@
         app:layout_constraintVertical_weight="0.2">
 
         <Button
+            android:visibility="gone"
             android:id="@+id/btn_calculate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

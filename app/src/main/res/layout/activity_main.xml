@@ -5,16 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="25dp"
+    android:fitsSystemWindows="true"
     android:background="@color/colorWhite"
-    android:padding="20dp"
-    tools:context="vone.meihuayishu.com.UI.Activity.MainActivity">
+    android:layout_margin="20dp"
+    tools:context="com.meihuayishu.vone.UI.Activity.MainActivity">
 
 
-    <Button
+    <ImageView
         android:id="@+id/btn_time"
         style="@style/tv_style_normal"
         android:layout_width="0dp"
+        android:padding="30dp"
+        android:src="@mipmap/shi"
         android:layout_height="0dp"
+        android:clickable="true"
         android:layout_marginBottom="5dp"
         android:background="@color/colorIndigo"
         android:transitionName="@string/shareElement_frg"
@@ -25,11 +29,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1" />
+        app:layout_constraintVertical_weight="1"
+        android:focusable="true" />
 
-    <Button
+    <ImageView
+        android:clickable="true"
         android:id="@+id/btn_yao"
         style="@style/tv_style_normal"
+        android:src="@mipmap/yao"
+        android:padding="30dp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/colorBlue"
@@ -39,31 +47,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_time"
         app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintVertical_weight="1" />
+        app:layout_constraintVertical_weight="1"
+        android:focusable="true" />
 
-    <Button
+    <ImageView
+        android:padding="30dp"
         android:id="@+id/btn_num"
         style="@style/tv_style_normal"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="5dp"
+        android:src="@mipmap/shu"
         android:background="@color/colorGreen"
         app:layout_constraintBottom_toTopOf="@+id/float_note"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintRight_toRightOf="@+id/btn_yao"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_yao"
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintVertical_weight="1" />
 
-    <Button
+    <ImageView
         android:id="@+id/btn_bazi"
         style="@style/tv_style_normal"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:padding="30dp"
+        android:src="@mipmap/ming"
         android:layout_marginLeft="5dp"
         android:background="@color/colorRed"
         app:layout_constraintBottom_toBottomOf="@+id/btn_num"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toRightOf="@+id/btn_yao"
@@ -90,8 +105,9 @@
             android:id="@+id/view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_gravity="center"
-            android:visibility="gone" />
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -104,10 +120,12 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@drawable/btn_ripple"
                 android:text="八字" />
 
             <TextView
                 android:id="@+id/tv_note_gua"
+                android:background="@drawable/btn_ripple"
                 style="@style/tv_style_normal"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

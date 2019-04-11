@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-
+    <color name="colorPrimary">#dddddd</color>
+    <color name="colorPrimaryDark">#838383</color>
+    <color name="colorAccent">#f5675d</color>
 
     <color name="colorRed">#f5675d</color>
     <color name="colorYellow">#eddc49</color>
@@ -18,5 +17,13 @@
     <color name="alp_colorGreen">#9b72cb6f</color>
     <color name="alp_colorIndigo">#9b5fbdb7</color>
     <color name="alp_colorWhite">#9bdddddd</color>
+
+    <color name="dark">@color/colorYellow</color>
+    <color name="mention">@color/colorBlue</color>
+    <color name="black">#000000</color>
+    <color name="gray">#0f1e1e1e</color>
+
+    <color name="translate">#00000000</color>
+    <color name="test">#e0f9d4a9</color>
 
 </resources>

@@ -6,7 +6,7 @@
     android:layout_marginLeft="50dp"
     android:layout_marginRight="50dp"
     android:gravity="center"
-    tools:context="vone.meihuayishu.com.UI.Frg.YaoChooseFragment">
+    tools:context="com.meihuayishu.vone.UI.Frg.YaoChooseFragment">
 
     <TextView
         android:id="@+id/tv_up"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_chainStyle="spread"
         app:layout_constraintVertical_weight="1" />
 
-    <vone.meihuayishu.com.VIEW.weidget.loopview.LoopView
+    <com.meihuayishu.vone.VIEW.weidget.loopview.LoopView
         android:id="@+id/loop_up"
         style="@style/MyLooperStyle"
         android:layout_width="0dp"
@@ -55,7 +55,7 @@
         app:layout_constraintLeft_toRightOf="@+id/tv_up"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <vone.meihuayishu.com.VIEW.weidget.loopview.LoopView
+    <com.meihuayishu.vone.VIEW.weidget.loopview.LoopView
         android:id="@+id/loop_down"
         style="@style/MyLooperStyle"
         android:layout_width="0dp"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loop_up" />
 
 
-    <vone.meihuayishu.com.VIEW.weidget.loopview.LoopView
+    <com.meihuayishu.vone.VIEW.weidget.loopview.LoopView
         android:id="@+id/loop_yao"
         style="@style/MyLooperStyle"
         android:layout_width="0dp"

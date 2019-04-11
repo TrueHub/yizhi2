@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">易之</string>
+    <string name="app_name">算了算了</string>
     <string name="title_activity_time">TimeActivity</string>
     <string name="shareElement_frg">share_ele_frg</string>
     <string name="shareElement_btn">share_ele_btn</string>

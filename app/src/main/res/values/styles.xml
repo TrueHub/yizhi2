@@ -32,4 +32,20 @@
         <item name="awv_scaleX">1.2</item>
         <item name="awv_textsize">15sp</item>
     </style>
+
+    <style name="normalText">
+        <item name="android:textColor">@color/colorYellow</item>
+        <item name="android:textSize">@dimen/normal_result</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="mentionText">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">@dimen/mention_result</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="dmentionText">
+        <item name="android:textSize">@dimen/mention_result</item>
+    </style>
+
 </resources>
